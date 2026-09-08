@@ -1,0 +1,13 @@
+name = "telcoproject"
+compatibility_date = "2024-04-01"
+main = "src/worker.ts"
+
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "telcoproject-db"
+database_id = "976f80b4-2596-4d3c-a217-3acf55ccc497"
+migrations_dir = "db"
