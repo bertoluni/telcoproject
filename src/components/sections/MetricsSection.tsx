@@ -1,45 +1,45 @@
 import React from 'react';
-import { TrendingUp, Users, Cpu, ShieldCheck } from 'lucide-react';
+import { TrendingUp, ServerOff, Globe, SignalHigh } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import { motion } from 'motion/react';
 
 export const MetricsSection: React.FC = () => {
   const metrics = [
     {
-      label: 'Edge Availability',
-      value: '99.99%',
-      change: '+0.04% this month',
-      icon: Cpu,
-      trend: 'up',
-      color: 'text-indigo-400',
-      bg: 'bg-indigo-500/10',
-    },
-    {
-      label: 'Global Average Latency',
-      value: '14.2 ms',
-      change: '-3.8 ms improvement',
-      icon: TrendingUp,
+      label: 'Guaranteed Speed',
+      value: '50 Mbps',
+      change: 'Always, anywhere.',
+      icon: SignalHigh,
       trend: 'up',
       color: 'text-emerald-400',
       bg: 'bg-emerald-500/10',
     },
     {
-      label: 'Active Waitlist / Leads',
-      value: '1,420+',
-      change: '+28% weekly surge',
-      icon: Users,
-      trend: 'up',
-      color: 'text-purple-400',
-      bg: 'bg-purple-500/10',
-    },
-    {
-      label: 'Data Integrity & Security',
-      value: '100%',
-      change: 'Zero Trust Guard',
-      icon: ShieldCheck,
+      label: 'Network Capex',
+      value: '$0.00',
+      change: 'Pure software telco.',
+      icon: ServerOff,
       trend: 'up',
       color: 'text-cyan-400',
       bg: 'bg-cyan-500/10',
+    },
+    {
+      label: 'Active Countries',
+      value: '10+',
+      change: '+2 launching next month',
+      icon: Globe,
+      trend: 'up',
+      color: 'text-lime-400',
+      bg: 'bg-lime-500/10',
+    },
+    {
+      label: 'Combined Networks',
+      value: '32 MNOs',
+      change: 'Union of all incumbents.',
+      icon: TrendingUp,
+      trend: 'up',
+      color: 'text-teal-400',
+      bg: 'bg-teal-500/10',
     },
   ];
 
